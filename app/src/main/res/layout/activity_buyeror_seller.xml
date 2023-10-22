@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/existing_buyer">
+
+    <RelativeLayout
+        android:id="@+id/center_horizontal_ref_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/select_role"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_seller"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_above="@+id/center_horizontal_ref_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/post_your_house"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="Seller"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_buyer"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/center_horizontal_ref_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/house_search"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="Buyer"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

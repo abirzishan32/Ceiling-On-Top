@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_bckg"
+    >
+
+    <ImageView
+        android:id="@+id/txt_create_user_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/create_user_account"
+        />
+
+    <ImageView
+        android:id="@+id/id_txt_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_create_user_ac"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/sign_up" />
+
+
+
+    <EditText
+        android:id="@+id/id_fullname_newuser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="@string/txt_full_name_newuser"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"></EditText>
+
+    <EditText
+        android:id="@+id/id_email_newuser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/id_fullname_newuser"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="@string/email_et_txt"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"></EditText>
+
+
+    <EditText
+        android:id="@+id/id_password_newuser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/id_email_newuser"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="30dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="@string/password_et_txt"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/id_mobileno_newuser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/id_password_newuser"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="@string/txt_mobile_number_newuser"
+        android:inputType="phone"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/btn_regitser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:text="SIGN UP"
+        app:cornerRadius="30dp"
+        android:textColor="@color/white"
+        android:alpha="0.5"
+        android:textSize="20sp">
+    </Button>
+
+</RelativeLayout>

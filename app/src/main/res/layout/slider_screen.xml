@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:flow_horizontalAlign="center"
+    android:background="@drawable/background_for_walkthrough">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/sliderImage"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/post_your_house"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/sliderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/screen1"
+        android:textAlignment="center"
+        android:textColor="@color/lavender"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sliderDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/screen1_desc"
+        android:textAlignment="center"
+        android:textColor="@color/lavender"
+        android:textSize="20dp" />
+
+</LinearLayout>

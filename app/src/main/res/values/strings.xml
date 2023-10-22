@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Ceiling On Top</string>
+    <string name="welcome">Find Your Dream Rental Property Here!</string>
+    <string name="screen1">Post Your House</string>
+    <string name="screen2">House Search</string>
+    <string name="screen3">House Details</string>
+    <string name="screen4">Review Houses</string>
+
+    <string name="screen1_desc">Post your house details and get it listed on our app and get your house rented.</string>
+    <string name="screen2_desc">Search and find for your dream rental property here.</string>
+    <string name="screen3_desc">View the details of the house you like.</string>
+    <string name="screen4_desc">Review the houses you like.</string>
+
+    <string name="select_role_txt">Select Role</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="txt_full_name_newuser">"Full Name</string>
+    <string name="email_et_txt">"Email Address"</string>
+    <string name="password_et_txt">"Enter Password"</string>
+    <string name="txt_mobile_number_newuser">"Enter Mobile Number</string>
+
+
+</resources>
