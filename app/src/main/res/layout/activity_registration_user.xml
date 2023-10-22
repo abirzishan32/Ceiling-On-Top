@@ -23,7 +23,6 @@
         android:src="@drawable/sign_up" />
 
 
-
     <EditText
         android:id="@+id/id_fullname_newuser"
         android:layout_width="match_parent"
@@ -107,6 +106,8 @@
         android:textColorHint="@color/white"
         android:textSize="14sp">
     </EditText>
+
+
 
 
     <Button
