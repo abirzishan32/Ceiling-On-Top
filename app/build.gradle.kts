@@ -39,6 +39,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.airbnb.android:lottie:5.2.0")
     implementation("androidx.annotation:annotation:1.6.0")
+    implementation ("com.airbnb.android:lottie:6.1.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     implementation("com.google.firebase:firebase-auth:22.2.0")

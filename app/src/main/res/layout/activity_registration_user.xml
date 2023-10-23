@@ -4,24 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/registration_bckg"
+    android:background="@drawable/registration_bck"
     >
 
     <ImageView
         android:id="@+id/txt_create_user_ac"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/create_user_account"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:src="@drawable/create_user_account" />
 
     <ImageView
         android:id="@+id/id_txt_sign_up"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@+id/txt_create_user_ac"
         android:layout_marginTop="0dp"
         android:src="@drawable/sign_up" />
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/id_typeofuser_male_user_icon"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/id_txt_sign_up"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/registration"></com.airbnb.lottie.LottieAnimationView>
 
     <EditText
         android:id="@+id/id_fullname_newuser"

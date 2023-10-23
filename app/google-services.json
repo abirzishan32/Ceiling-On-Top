@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "581671388771",
+    "project_id": "ceiling-on-top",
+    "storage_bucket": "ceiling-on-top.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581671388771:android:883fdac1acf29bc7ed9a56",
+        "android_client_info": {
+          "package_name": "com.example.ceilingontop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHN48THLFt2s6N0t3IMNy3ZRYZMg2nfHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,21 +13,31 @@
         android:layout_centerVertical="true">
     </RelativeLayout>
 
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/select_role"
-        />
+        android:id="@+id/txt_select_role"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:src="@drawable/select_role" />
 
-
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/id_typeofuser_admin_icon"
+        android:layout_width="396dp"
+        android:layout_height="329dp"
+        android:layout_below="@+id/txt_select_role"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-81dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/select_buyer"></com.airbnb.lottie.LottieAnimationView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_seller"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_above="@+id/center_horizontal_ref_line"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-20dp"
+        android:layout_marginBottom="-70dp"
         app:cardBackgroundColor="@color/grey"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
@@ -55,11 +65,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_buyer"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/center_horizontal_ref_line"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         app:cardBackgroundColor="@color/grey"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
@@ -88,8 +98,4 @@
             android:textStyle="bold">
         </TextView>
     </androidx.cardview.widget.CardView>
-
-
-
-
 </RelativeLayout>

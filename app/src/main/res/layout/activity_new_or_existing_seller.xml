@@ -16,20 +16,28 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:src="@drawable/select_seller_type"
         />
 
 
-
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/id_typeofuser_male_user_icon"
+        android:layout_width="304dp"
+        android:layout_height="290dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/select_seller"></com.airbnb.lottie.LottieAnimationView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_newseller"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_above="@+id/center_horizontal_ref_line"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-20dp"
+        android:layout_marginBottom="-70dp"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardMaxElevation="12dp"
@@ -49,7 +57,7 @@
             android:layout_marginBottom="10dp"
             android:text="New Seller"
             android:textColor="@color/white"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold">
         </TextView>
     </androidx.cardview.widget.CardView>
@@ -57,11 +65,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_existingseller"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/center_horizontal_ref_line"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardMaxElevation="12dp"
@@ -74,8 +82,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/existing_seller"
-                />
+                android:src="@drawable/existing_seller" />
 
         </RelativeLayout>
         <TextView
@@ -85,7 +92,7 @@
             android:layout_marginBottom="10dp"
             android:text="Existing Seller"
             android:textColor="@color/white"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold">
         </TextView>
     </androidx.cardview.widget.CardView>

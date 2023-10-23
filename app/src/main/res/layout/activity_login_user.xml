@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bckg"
+    android:background="@drawable/registration_bck"
     >
 
     <ImageView
         android:id="@+id/txt_login_user_ac"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/login_with_existing_account"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:src="@drawable/login_with_existing_account" />
 
     <ImageView
         android:id="@+id/id_welcome_admin_txt"
@@ -21,6 +20,17 @@
         android:layout_below="@+id/txt_login_user_ac"
         android:layout_marginTop="0dp"
         android:src="@drawable/sign_in" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/id_user_login_animation"
+        android:layout_width="235dp"
+        android:layout_height="243dp"
+        android:layout_below="@id/id_welcome_admin_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login"></com.airbnb.lottie.LottieAnimationView>
 
 
     <EditText
@@ -44,6 +54,7 @@
         android:textColorHint="@color/white"
         android:textSize="14sp"></EditText>
 
+
     <EditText
         android:id="@+id/password_et"
         android:layout_width="match_parent"
@@ -52,7 +63,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="9dp"
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="12dp"
         android:drawableTint="@color/white"
@@ -63,10 +74,7 @@
         android:paddingEnd="12dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="14sp">
-    </EditText>
-
-
+        android:textSize="14sp"></EditText>
 
     <Button
         android:id="@+id/btn_sign_in"
@@ -75,13 +83,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="84dp"
         android:backgroundTint="@color/black"
         android:text="SIGN IN"
-        android:textAllCaps="false"
-        android:alpha="0.5"
         android:textColor="@color/white"
-        android:textSize="20sp">
-    </Button>
+        android:textSize="20sp"></Button>
 
 </RelativeLayout>
