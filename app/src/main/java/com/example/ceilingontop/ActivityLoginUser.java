@@ -44,7 +44,7 @@ public class ActivityLoginUser extends AppCompatActivity {
                             public void onSuccess(AuthResult authResult) {
                                 Toast toast = Toast.makeText(ActivityLoginUser.this, "Login Successful", Toast.LENGTH_SHORT);
                                 toast.show();
-                                startActivity(new Intent(ActivityLoginUser.this, MainActivity.class));
+                                startActivity(new Intent(ActivityLoginUser.this, ActivityBeforeUploadHouse.class));
                                 finish();
                             }
                         }).addOnFailureListener(new OnFailureListener() {

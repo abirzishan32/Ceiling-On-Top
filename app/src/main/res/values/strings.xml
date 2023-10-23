@@ -23,7 +23,6 @@
     <string name="txt_full_name_newuser">"Full Name</string>
     <string name="email_et_txt">"Email Address"</string>
     <string name="password_et_txt">"Enter Password"</string>
-    <string name="txt_mobile_number_newuser">"Enter Mobile Number</string>
-
+    <string name="txt_mobile_number_newuser">"Enter Mobile Number"</string>
 
 </resources>
