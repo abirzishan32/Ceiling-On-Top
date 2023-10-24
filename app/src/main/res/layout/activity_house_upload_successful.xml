@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/house_upload_successful">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/id_successful_signin_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:lottie_rawRes="@raw/successful_google_signin_lottieanim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="30dp">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <RelativeLayout
+        android:id="@+id/house_reg_successful_card"
+        android:layout_width="184dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/verify_bg_card">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/baseline_done_24"></ImageView>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:text="House Uploaded Successfully!"
+            android:fontFamily="@font/roboto_bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+    </TextView>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/house_reg_successful_card"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="194dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/sky_blue"
+        android:fontFamily="@font/roboto_bold"
+        android:text="CONTINUE"
+        android:textColor="@color/black"
+        android:textSize="20sp"></Button>
+
+
+</RelativeLayout>

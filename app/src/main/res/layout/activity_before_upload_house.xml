@@ -32,34 +32,59 @@
         app:layout_constraintVertical_bias="0.0" />
 
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="304dp"
         android:layout_height="55dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="Upload Information of
-        Your House"
-        android:textColor="@color/white"
-        android:textSize="23dp"
-        android:textStyle="bold"
+        Your House!"
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.635"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_toolbar"
-        app:layout_constraintVertical_bias="0.995" />
+        app:layout_constraintVertical_bias="0.441" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+
+    <Button
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/sky_blue"
-        android:src="@drawable/baseline_add_circle_outline_24"
+        android:fontFamily="@font/roboto_bold"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.943"></Button>
+
+    <Button
+        android:id="@+id/btn_lets_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/sky_blue"
+        android:fontFamily="@font/roboto_bold"
+        android:drawableRight="@drawable/baseline_upload_24"
+        android:text="LET'S UPLOAD"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.148"></Button>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

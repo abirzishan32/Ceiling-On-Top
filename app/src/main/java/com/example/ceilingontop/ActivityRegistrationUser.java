@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ActivityRegistrationUser extends AppCompatActivity {
     private FirebaseAuth auth;
     private EditText email, password, name, phone;
-    private Button button;
+    private Button button, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +33,26 @@ public class ActivityRegistrationUser extends AppCompatActivity {
         name = findViewById(R.id.id_fullname_newuser);
         phone = findViewById(R.id.id_mobileno_newuser);
         button = findViewById(R.id.btn_regitser);
+        back = findViewById(R.id.btn_back4);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String user = email.getText().toString();
                 String pass = password.getText().toString();
+                String fullname = name.getText().toString();
+                String mobileno = phone.getText().toString();
+                if (fullname.isEmpty()){
+                    name.setError("Please enter your name");
+                }
                 if (user.isEmpty()){
                     email.setError("Please enter email id");
                 }
                 if (pass.isEmpty()){
                     password.setError("Please enter password");
+                }
+                if (mobileno.isEmpty()){
+                    phone.setError("Please enter mobile number");
                 }
                 else {
                     auth.createUserWithEmailAndPassword(user, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -63,6 +72,18 @@ public class ActivityRegistrationUser extends AppCompatActivity {
 
             }
         });
+
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityRegistrationUser.this, NewOrExistingSeller.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
 
 

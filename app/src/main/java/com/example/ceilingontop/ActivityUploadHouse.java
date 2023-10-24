@@ -32,7 +32,7 @@ import java.util.List;
 
 public class ActivityUploadHouse extends AppCompatActivity {
     private EditText houseName, houseAddress, numRooms, numWashrooms, phoneNumber;
-    private Button uploadButton;
+    private Button uploadButton, back;
     private ImageView houseImageView;
 
     private FirebaseAuth mAuth;
@@ -54,6 +54,7 @@ public class ActivityUploadHouse extends AppCompatActivity {
         phoneNumber = findViewById(R.id.input_phone_number);
         uploadButton = findViewById(R.id.btn_upload);
         houseImageView = findViewById(R.id.house_image_view);
+        back = findViewById(R.id.btn_back3);
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -91,11 +92,62 @@ public class ActivityUploadHouse extends AppCompatActivity {
         uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (uploadHouseInfo(sellerId) == false) {
+                    Toast toast = Toast.makeText(ActivityUploadHouse.this, "Please fill in all the fields", Toast.LENGTH_SHORT);
+                    return;
+                }
                 uploadHouseInfo(sellerId);
-                Intent intent = new Intent(ActivityUploadHouse.this, ActivityBeforeUploadHouse.class);
+                Intent intent = new Intent(ActivityUploadHouse.this, HouseUploadSuccessful.class);
                 startActivity(intent);
             }
-            public void uploadHouseInfo (String sellerId){
+
+            private boolean validateInput() {
+                String name = houseName.getText().toString().trim();
+                String address = houseAddress.getText().toString().trim();
+                String roomsStr = numRooms.getText().toString();
+                String washroomsStr = numWashrooms.getText().toString();
+                String phone = phoneNumber.getText().toString().trim();
+
+                if (name.isEmpty()) {
+                    houseName.setError("House name is required");
+                    houseName.requestFocus();
+                    return false;
+                }
+
+                if (address.isEmpty()) {
+                    houseAddress.setError("House address is required");
+                    houseAddress.requestFocus();
+                    return false;
+                }
+
+                if (roomsStr.isEmpty()) {
+                    numRooms.setError("Number of rooms is required");
+                    numRooms.requestFocus();
+                    return false;
+                }
+
+                if (washroomsStr.isEmpty()) {
+                    numWashrooms.setError("Number of washrooms is required");
+                    numWashrooms.requestFocus();
+                    return false;
+                }
+
+                int rooms = Integer.parseInt(roomsStr);
+                int washrooms = Integer.parseInt(washroomsStr);
+
+                if (phone.isEmpty()) {
+                    phoneNumber.setError("Phone number is required");
+                    phoneNumber.requestFocus();
+                    return false;
+                }
+
+                return true;
+            }
+
+            public boolean uploadHouseInfo (String sellerId){
+                if (!validateInput()) {
+                    return false;
+                }
                 String name = houseName.getText().toString().trim();
                 String address = houseAddress.getText().toString().trim();
                 int rooms = Integer.parseInt(numRooms.getText().toString());
@@ -141,7 +193,15 @@ public class ActivityUploadHouse extends AppCompatActivity {
                 });
 
 
+                return true;
+            }
+        });
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityUploadHouse.this, ActivityBeforeUploadHouse.class);
+                startActivity(intent);
             }
         });
 

@@ -25,6 +25,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/screen4"
         android:textAlignment="center"
+        android:fontFamily="@font/roboto_bold"
         android:textColor="@color/lavender"
         android:textSize="30dp"
         android:textStyle="bold" />
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/screen4_desc"
         android:textAlignment="center"
         android:textColor="@color/lavender"

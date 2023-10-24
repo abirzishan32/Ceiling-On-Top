@@ -43,6 +43,7 @@
         android:drawablePadding="12dp"
         android:drawableTint="@color/white"
         android:ems="10"
+        android:fontFamily="@font/roboto_bold"
         android:hint="@string/txt_full_name_newuser"
         android:inputType="textPersonName"
         android:paddingStart="12dp"
@@ -58,8 +59,9 @@
         android:layout_below="@+id/id_fullname_newuser"
         android:layout_centerInParent="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
+        android:fontFamily="@font/roboto_bold"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="12dp"
         android:drawableTint="@color/white"
@@ -79,7 +81,8 @@
         android:layout_height="60dp"
         android:layout_below="@id/id_email_newuser"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
         android:layout_marginRight="30dp"
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="12dp"
@@ -100,7 +103,8 @@
         android:layout_height="60dp"
         android:layout_below="@id/id_password_newuser"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
         android:layout_marginRight="30dp"
         android:drawableStart="@drawable/ic_phone"
         android:drawablePadding="12dp"
@@ -116,22 +120,36 @@
     </EditText>
 
 
-
-
     <Button
         android:id="@+id/btn_regitser"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/black"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/sky_blue"
+        android:fontFamily="@font/roboto_bold"
         android:text="SIGN UP"
-        app:cornerRadius="30dp"
-        android:textColor="@color/white"
-        android:alpha="0.5"
-        android:textSize="20sp">
-    </Button>
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:cornerRadius="30dp"></Button>
 
+    <Button
+        android:id="@+id/btn_back4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/sky_blue"
+        android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+        android:fontFamily="@font/roboto_bold"
+        android:text="BACK"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignBottom="@+id/btn_regitser"
+        android:layout_marginBottom="-80dp"
+        android:layout_marginLeft="25dp"
+    />
 </RelativeLayout>
