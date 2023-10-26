@@ -12,12 +12,16 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ActivityBeforeUploadHouse extends AppCompatActivity {
     Button upload, back;
+    TextView email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_before_upload_house);
         upload = findViewById(R.id.btn_lets_upload);
         back = findViewById(R.id.btn_back);
+        email = findViewById(R.id.set_email_id);
+
+
 
         upload.setOnClickListener(new View.OnClickListener() {
             @Override

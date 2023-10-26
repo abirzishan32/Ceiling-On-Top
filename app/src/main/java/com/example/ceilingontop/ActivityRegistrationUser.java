@@ -35,6 +35,9 @@ public class ActivityRegistrationUser extends AppCompatActivity {
         button = findViewById(R.id.btn_regitser);
         back = findViewById(R.id.btn_back4);
 
+        Intent path = getIntent();
+        String source = path.getStringExtra("source");
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +62,16 @@ public class ActivityRegistrationUser extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
-                                startActivity(new Intent(ActivityRegistrationUser.this, ActivityLoginUser.class));
+                                if (source.equals("seller")){
+                                    Intent intent = new Intent(ActivityRegistrationUser.this, NewOrExistingSeller.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                                else {
+                                    Intent intent = new Intent(ActivityRegistrationUser.this, NewOrExistingBuyer.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
                             }
                             else {
                                 Toast toast = Toast.makeText(ActivityRegistrationUser.this, "Registration Failed", Toast.LENGTH_SHORT);

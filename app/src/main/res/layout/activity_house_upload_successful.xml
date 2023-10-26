@@ -7,15 +7,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/house_upload_successful">
 
+
+
+
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/id_successful_signin_lottie"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        app:lottie_rawRes="@raw/successful_google_signin_lottieanim"
+        android:layout_marginTop="30dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        android:layout_marginTop="30dp">
-    </com.airbnb.lottie.LottieAnimationView>
+        app:lottie_rawRes="@raw/successful_google_signin_lottieanim"></com.airbnb.lottie.LottieAnimationView>
 
     <RelativeLayout
         android:id="@+id/house_reg_successful_card"
@@ -45,7 +48,7 @@
             android:text="House Uploaded Successfully!"
             android:fontFamily="@font/roboto_bold"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold">
     </TextView>
@@ -59,16 +62,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/house_reg_successful_card"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="194dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/sky_blue"
         android:fontFamily="@font/roboto_bold"
-        android:text="CONTINUE"
+        android:text="OKAY"
         android:textColor="@color/black"
         android:textSize="20sp"></Button>
+
+    <Button
+        android:id="@+id/btn_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_continue"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="194dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/sky_blue"
+        android:fontFamily="@font/roboto_bold"
+        android:text="LOG OUT"
+        android:textColor="@color/black"
+        android:textSize="20sp"></Button>
+
+
 
 
 </RelativeLayout>

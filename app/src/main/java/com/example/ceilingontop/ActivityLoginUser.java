@@ -45,6 +45,11 @@ public class ActivityLoginUser extends AppCompatActivity {
             public void onClick(View v) {
                 String user = email.getText().toString();
                 String pass = password.getText().toString();
+
+                Intent path = getIntent();
+                String source = path.getStringExtra("source");
+
+
                 if(!user.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(user).matches()){
                     if(!pass.isEmpty()){
                         auth.signInWithEmailAndPassword(user, pass).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
@@ -52,8 +57,16 @@ public class ActivityLoginUser extends AppCompatActivity {
                             public void onSuccess(AuthResult authResult) {
                                 Toast toast = Toast.makeText(ActivityLoginUser.this, "Login Successful", Toast.LENGTH_SHORT);
                                 toast.show();
-                                startActivity(new Intent(ActivityLoginUser.this, ActivityBeforeUploadHouse.class));
-                                finish();
+                                if (source.equals("seller")){
+                                    Intent intent = new Intent(ActivityLoginUser.this, ActivityBeforeUploadHouse.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                                else {
+                                    Intent intent = new Intent(ActivityLoginUser.this, MainActivity.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
