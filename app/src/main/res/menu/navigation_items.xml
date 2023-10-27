@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:icon="@drawable/privacy_policy"
+        android:iconTint="@color/lavender"
+        android:title="Privacy Policy"
+        />
+
+    <item
+        android:id="@+id/faqs"
+        android:icon="@drawable/faqs"
+        android:iconTint="@color/lavender"
+        android:title="FAQs"
+        />
+
+    <item
+        android:id="@+id/about_us"
+        android:icon="@drawable/about"
+        android:iconTint="@color/lavender"
+        android:title="About Us"
+        />
+
+    <item
+        android:id="@+id/log_out"
+        android:icon="@drawable/logout"
+        android:iconTint="@color/lavender"
+        android:title="Log Out"
+        />
+
+
+
+
+</menu>
+
+

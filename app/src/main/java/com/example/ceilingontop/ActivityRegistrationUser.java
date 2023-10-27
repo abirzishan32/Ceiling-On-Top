@@ -67,7 +67,7 @@ public class ActivityRegistrationUser extends AppCompatActivity {
                                     startActivity(intent);
                                     finish();
                                 }
-                                else {
+                                else if(source.equals("buyer")){
                                     Intent intent = new Intent(ActivityRegistrationUser.this, NewOrExistingBuyer.class);
                                     startActivity(intent);
                                     finish();

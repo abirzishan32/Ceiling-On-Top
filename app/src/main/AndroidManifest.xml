@@ -13,15 +13,17 @@
         android:theme="@style/Theme.CeilingOnTop"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".HouseListing"
+            android:exported="false" />
+        <activity
             android:name=".HouseUploadSuccessful"
             android:exported="false" />
         <activity
-            android:name=".HouseListingActivity"
-            android:exported="false" />
-        <activity
             android:name=".ActivityBeforeUploadHouse"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".ActivityUploadHouse"
             android:exported="false" />

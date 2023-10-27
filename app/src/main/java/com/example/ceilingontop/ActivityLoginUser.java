@@ -21,6 +21,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.example.ceilingontop.HouseListing;
 
 public class ActivityLoginUser extends AppCompatActivity {
     private FirebaseAuth auth;
@@ -62,8 +63,8 @@ public class ActivityLoginUser extends AppCompatActivity {
                                     startActivity(intent);
                                     finish();
                                 }
-                                else {
-                                    Intent intent = new Intent(ActivityLoginUser.this, MainActivity.class);
+                                else if(source.equals("buyer")) {
+                                    Intent intent = new Intent(ActivityLoginUser.this, HouseListing.class);
                                     startActivity(intent);
                                     finish();
                                 }

@@ -37,19 +37,6 @@
         app:layout_constraintVertical_bias="0.142">
 
 
-        <TextView
-            android:id="@+id/set_email_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="7dp"
-            android:paddingRight="7dp"
-            android:paddingStart="7dp"
-            android:paddingEnd="7dp"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
     </androidx.cardview.widget.CardView>
 
     <com.airbnb.lottie.LottieAnimationView
@@ -132,16 +119,6 @@
         app:layout_constraintVertical_bias="0.148"></Button>
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_person"
-        app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView"
-        app:layout_constraintEnd_toStartOf="@+id/email_shower"
-        app:layout_constraintHorizontal_bias="0.987"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_toolbar"
-        app:layout_constraintVertical_bias="0.145" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
