@@ -81,7 +81,6 @@ public class ActivityRegistrationUser extends AppCompatActivity {
                         }
                     });
                 }
-
             }
         });
 

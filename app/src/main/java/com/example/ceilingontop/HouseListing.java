@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -41,6 +42,9 @@ public class HouseListing extends AppCompatActivity {
 
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        loadFragment(new HomeFrag());
+
+
 
 
 
@@ -48,6 +52,10 @@ public class HouseListing extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
+
+                if (id == R.id.home){
+                    loadFragment(new HomeFrag());
+                }
 
                 if (id == R.id.privacy_policy){
                     loadFragment(new PrivacyPolicyFrag());
