@@ -7,20 +7,21 @@ public class house {
     private String houseName;
     private String houseAddress;
     private String phoneNumber;
-    private int numRooms;
-    private int numWashrooms;
+    private String numRooms;
+    private String numWashrooms;
     private String houseImages;
 
     public house() {
         // Default constructor required for Firebase
     }
 
-    public house( String houseName,String houseAddress,  int numRooms,int numWashrooms,String phoneNumber) {
+    public house( String houseName,String houseAddress,  String numRooms,String numWashrooms,String phoneNumber, String houseImages) {
         this.houseName = houseName;
         this.houseAddress = houseAddress;
         this.numRooms = numRooms;
         this.numWashrooms = numWashrooms;
         this.phoneNumber = phoneNumber;
+        this.houseImages = houseImages;
     }
 
     public String getHouseId() {
@@ -47,19 +48,19 @@ public class house {
         this.houseAddress = houseAddress;
     }
 
-    public int getNumRooms() {
+    public String  getNumRooms() {
         return numRooms;
     }
 
-    public void setNumRooms(int numRooms) {
+    public void setNumRooms(String numRooms) {
         this.numRooms = numRooms;
     }
 
-    public int getNumWashrooms() {
+    public String  getNumWashrooms() {
         return numWashrooms;
     }
 
-    public void setNumWashrooms(int numWashrooms) {
+    public void setNumWashrooms(String numWashrooms) {
         this.numWashrooms = numWashrooms;
     }
 

@@ -72,7 +72,8 @@ public class ActivityUploadHouse extends AppCompatActivity {
                             Intent data = result.getData();
                             imageURI = data.getData();
                             houseImageView.setImageURI(imageURI);
-                        } else {
+                        }
+                        else {
                             Toast.makeText(ActivityUploadHouse.this, "Image not selected", Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -96,7 +97,6 @@ public class ActivityUploadHouse extends AppCompatActivity {
                     Toast toast = Toast.makeText(ActivityUploadHouse.this, "Please fill in all the fields", Toast.LENGTH_SHORT);
                     return;
                 }
-                uploadHouseInfo(sellerId);
                 Intent intent = new Intent(ActivityUploadHouse.this, HouseUploadSuccessful.class);
                 startActivity(intent);
             }
@@ -150,11 +150,12 @@ public class ActivityUploadHouse extends AppCompatActivity {
                 }
                 String name = houseName.getText().toString().trim();
                 String address = houseAddress.getText().toString().trim();
-                int rooms = Integer.parseInt(numRooms.getText().toString());
-                int washrooms = Integer.parseInt(numWashrooms.getText().toString());
+                String rooms = numRooms.getText().toString().trim();
+                String washrooms = numWashrooms.getText().toString().trim();
                 String phone = phoneNumber.getText().toString().trim();
+                String houseImages = imageURI.toString();
 
-                house house = new house(name, address, rooms, washrooms, phone);
+                house house = new house(name, address, rooms, washrooms, phone, houseImages);
                 house.setSellerId(sellerId);
 
                 DatabaseReference newHouseRef = houseDatabase.push();
