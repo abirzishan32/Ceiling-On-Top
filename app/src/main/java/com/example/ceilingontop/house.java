@@ -32,7 +32,7 @@ public class house {
         this.sellerId = houseId;
     }
 
-    public String getHouseName() {
+    public  String getHouseName() {
         return houseName;
     }
 
@@ -40,7 +40,7 @@ public class house {
         this.houseName = houseName;
     }
 
-    public String getHouseAddress() {
+    public  String getHouseAddress() {
         return houseAddress;
     }
 
@@ -56,7 +56,7 @@ public class house {
         this.numRooms = numRooms;
     }
 
-    public String  getNumWashrooms() {
+    public  String  getNumWashrooms() {
         return numWashrooms;
     }
 
@@ -80,7 +80,7 @@ public class house {
         this.houseImages = houseImages;
     }
 
-    public String getPhoneNumber() {
+    public  String getPhoneNumber() {
         return phoneNumber;
     }
 

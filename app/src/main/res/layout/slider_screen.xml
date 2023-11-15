@@ -22,6 +22,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/screen1"
         android:textAlignment="center"
+        android:fontFamily="@font/roboto_bold"
         android:textColor="@color/lavender"
         android:textSize="35dp"
         android:textStyle="bold" />
